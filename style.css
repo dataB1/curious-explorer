@@ -1,0 +1,280 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #2c2c2c;
+    background-color: #fafaf8;
+    background-image:
+        radial-gradient(ellipse at top right, rgba(200, 210, 220, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom left, rgba(180, 190, 200, 0.1) 0%, transparent 50%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+/* Header */
+header {
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 48px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+}
+
+nav a {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #444;
+    text-decoration: none;
+    padding: 4px 0;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+nav a:hover {
+    border-bottom-color: #888;
+}
+
+/* Main content */
+main {
+    margin-bottom: 80px;
+}
+
+.intro {
+    margin-bottom: 48px;
+}
+
+.intro p {
+    margin-bottom: 16px;
+}
+
+.intro p:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* Notes list */
+.notes-list {
+    list-style: none;
+}
+
+.notes-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+}
+
+.notes-list .date {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #999;
+    flex-shrink: 0;
+}
+
+.notes-list a {
+    color: #2c2c2c;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: border-color 0.2s ease;
+}
+
+.notes-list a:hover {
+    border-bottom-color: #666;
+}
+
+/* Footer */
+footer {
+    padding-top: 32px;
+    border-top: 1px solid #e5e5e5;
+}
+
+footer p {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #999;
+}
+
+/* Page-specific styles */
+.page-content {
+    margin-bottom: 48px;
+}
+
+.page-content p {
+    margin-bottom: 16px;
+}
+
+.page-content ul {
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+.page-content li {
+    margin-bottom: 8px;
+}
+
+.back-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 32px;
+}
+
+.back-link:hover {
+    color: #333;
+}
+
+.back-link::before {
+    content: "← ";
+}
+
+/* Book list */
+.book-list {
+    list-style: none;
+}
+
+.book-list li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.book-list li:last-child {
+    border-bottom: none;
+}
+
+.book-title {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.book-author {
+    color: #666;
+    font-style: italic;
+}
+
+.book-note {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+}
+
+/* Links list */
+.links-list {
+    list-style: none;
+}
+
+.links-list li {
+    margin-bottom: 16px;
+}
+
+.links-list a {
+    color: #2c2c2c;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.links-list a:hover {
+    border-bottom-color: #666;
+}
+
+.links-list .link-desc {
+    display: block;
+    font-size: 15px;
+    color: #777;
+    margin-top: 4px;
+}
+
+/* Projects */
+.project-item {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #eee;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-item h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.project-item p {
+    margin-bottom: 8px;
+}
+
+.project-item a {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 48px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    body {
+        font-size: 17px;
+    }
+
+    nav ul {
+        gap: 8px 16px;
+    }
+}
